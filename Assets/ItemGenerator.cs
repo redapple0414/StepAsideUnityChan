@@ -10,7 +10,7 @@ public class ItemGenerator : MonoBehaviour
     private int startPos = 80;
     private float goalPos = 360;
     private float posRange = 3.4f;
-    private GameObject unitychan;
+   
 
     // Start is called before the first frame update
     void Start()
@@ -63,13 +63,7 @@ public class ItemGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.unitychan = GameObject.Find("unitychan");
-
-        Debug.Log(this.unitychan.transform.position.z);
-        if (unitychan.transform.position.z > this.transform.position.z)
-        {
-            Destroy(this.gameObject);
-        }
+        
 
     }
 
